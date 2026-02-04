@@ -1,0 +1,20 @@
+class BMW():
+    def year(self):
+        print("bmw was created in 1916")
+    def country(self):
+        print("bmw was invented in germany ")
+    def latestmodel(self):
+            print("the latest model of bmw is ix3")
+class FERRARI():
+    def year(self):
+        print("WHEN WAS FERRARI invented 1939")
+    def country(self):
+         print("ferrari was invented in italy ")
+    def latestmodel(self):
+         print("the latest model of ferrai is 849 testa rossa")
+obj_bmw=BMW()
+obj_FER=FERRARI()
+for country in (obj_bmw,obj_FER):
+     country.year()
+     country.country()
+     country.latestmodel()     
