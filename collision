@@ -1,0 +1,15 @@
+import pygame
+import random
+pygame.init()
+bagroundimage=pygame.transform.scale(pygame.image.load("download.png"),(500,400))
+font=pygame.font.SysFont("Times New Roman",72)
+class sprite(pygame.sprite.Sprite):
+    def __init__(self,color,height,width):
+        super().__init__()
+        self.image=pygame.Surface([width,height])
+        self.image.fill(pygame.Color("black"))
+        pygame.draw.rect(self.image,color,pygame.Rect(0,0,width,height))
+        self.rect=self.image.get_rect()
+    def move(self,x_change,y_change):
+        self.rect.x=max(min(self.rect.x+x_change,500-self.rect.width),0)  
+        self.rect.y=max(min(self.rect.y+y_change,400-self.rect.height),0) 
