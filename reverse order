@@ -1,0 +1,3 @@
+sukhit=int(input("enter the number"))
+for i in range(sukhit,2,-1):
+    print(i)
