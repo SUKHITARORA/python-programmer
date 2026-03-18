@@ -1,0 +1,17 @@
+from tkinter import*
+windows=Tk()
+windows.geometry("400x400")
+windows.title("age calculator")
+l1=Label(text="enter the year of birth",fg="white",bg="black",height=1,width=300)
+l1.pack()
+yearinput=Entry()
+yearinput.pack()
+def begin():
+    year=int(yearinput.get())
+    age=(2026-year)
+    textbox.insert(END,f"the age is {age}")
+b1=Button(text="start",command=begin)
+b1.pack()
+textbox=Text(height=3)
+textbox.pack()
+windows.mainloop()
