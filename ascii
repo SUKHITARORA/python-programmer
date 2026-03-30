@@ -1,0 +1,6 @@
+ch = input("Enter a character: ")
+ascii_value = ord(ch)
+print("The secret code (ASCII value) of", ch, "is:", ascii_value)
+num = int(input("Enter a number (ASCII code): "))
+ch = chr(num)
+print("The character for this code is:", ch)
