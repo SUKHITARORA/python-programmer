@@ -1,0 +1,11 @@
+weather=(input("enter the weather: "))
+if(weather.lower()=="snow"):
+    print("it is winter")
+elif(weather.lower()=="cloudy"):
+    print("it is rainy")
+elif(weather.lower()=="sunny"):
+    print("it is summer")
+elif(weather.lower()=="pleasent"):
+    print("it is spring")
+else:
+    print("invalid input")
