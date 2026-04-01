@@ -1,0 +1,6 @@
+s=int(input("enter the number"))
+result=""
+while s>0:
+    result=str(s%2)+result
+    s=s//2
+print(result)
