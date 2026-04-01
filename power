@@ -1,0 +1,4 @@
+s=int(input("enter the number"))
+i=int(input("enter the power"))
+result=s**i
+print(result)
