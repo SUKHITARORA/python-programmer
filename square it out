@@ -1,0 +1,15 @@
+start=int(input("enter start number"))
+end=int(input("enter the end number"))
+squares=[]
+for i in range(start,end+1):
+    squares.append(i*i)
+print(f"square values are{squares}")
+even=[]
+odd=[]
+for i in squares:
+    if i%2==0:
+        even.append(i)
+    else:
+        odd.append(i)
+print(f"even numbers are {even}")
+print(f"odd numbers are { odd}")
