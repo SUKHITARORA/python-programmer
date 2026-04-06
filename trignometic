@@ -1,0 +1,5 @@
+import math
+angle=60
+print(f"the sin value is {math.sin(angle)}")
+print(f"the cos value is {math.cos(angle)}")
+print(f"the tan value is {math.tan(angle)}")
