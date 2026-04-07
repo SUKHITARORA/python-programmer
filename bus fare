@@ -1,0 +1,16 @@
+class Vehicle:
+    def __init__(self, capacity, fare_per_person):
+        self.capacity = capacity
+        self.fare_per_person = fare_per_person
+    def calculate_fare(self):
+        return self.capacity * self.fare_per_person
+class Bus(Vehicle):
+    def __init__(self, capacity, fare_per_person):
+        super().__init__(capacity, fare_per_person)
+    def calculate_fare(self):
+        basic_fare = super().calculate_fare()
+        maintenance_charge = basic_fare * 0.10
+        total_fare = basic_fare + maintenance_charge
+        return total_fare
+bus = Bus(capacity=50, fare_per_person=100)
+print("Total Bus Fare:", bus.calculate_fare())
