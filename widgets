@@ -1,0 +1,22 @@
+from tkinter import*
+window=Tk()
+window.geometry("400x400")
+window.title("getting started with widgets")
+l1=Label(text="enter the first number",bg="black",fg="white")
+l1.pack()
+numberinput1=Entry()
+numberinput1.pack()
+l2=Label(text="enter the second number",bg="black",fg="white")
+l2.pack()
+numberinput2=Entry()
+numberinput2.pack()
+def begin():
+    number1=int(numberinput1.get())
+    number2=int(numberinput2.get())
+    answer=number1*number2
+    textbox.insert(END,f"the answer is {answer}")
+b1=Button(text="start",command=begin)
+b1.pack()
+textbox=Text(height=3)
+textbox.pack()
+window.mainloop()
