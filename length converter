@@ -1,0 +1,20 @@
+from tkinter import*
+window=Tk()
+window.geometry("400x400")
+window.title("lenth converter app")
+l1=Label(text="lenth converter app",bg="black",fg="white")
+l1.pack()
+l2=Label(text="enter length in inches")
+l2.pack()
+t1=Entry()
+t1.pack()
+def calculate():
+    inch=int(t1.get())
+    cm=inch*2.54
+    message=f"{inch} inch is equal to {cm} cm"
+    t2.insert(END,message)
+b1=Button(text="convert inches to centimetre",command=calculate)
+b1.pack()
+t2=Text(height=3)
+t2.pack()
+window.mainloop()
